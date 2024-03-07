@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Margin Calculator</h2>
+        <label for="marginAmount">Amount of Margin Used ($):</label>
+        <input type="number" id="marginAmount" placeholder="Enter amount">
+
+        <label for="daysHeld">Number of Days Held:</label>
+        <input type="number" id="daysHeld" placeholder="Enter days">
+
+        <label for="interestRate">Annual Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="Enter interest rate">
+
+        <button onclick="calculateMargin()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
