@@ -12,6 +12,8 @@
         <div class="tab">
             <button class="tablinks" onclick="openCalculator(event, 'Margin')" id="defaultOpen">Margin Calculator</button>
             <button class="tablinks" onclick="openCalculator(event, 'CoveredCall')">Covered Call Calculator</button>
+            <button class="tablinks" onclick="openCalculator(event, 'PoorMansCoveredCall')">PMCC Calculator</button>
+
         </div>
 
         <div id="Margin" class="tabcontent">
@@ -35,6 +37,24 @@
             <button onclick="calculateCoveredCall()">Calculate</button>
             <div id="coveredCallResult"></div>
         </div>
+
+        <div id="PoorMansCoveredCall" class="tabcontent">
+            <label for="longCallCost">Cost of Long Call ($):</label>
+            <input type="number" id="longCallCost" placeholder="Enter cost of long call">
+        
+            <label for="strikePrice">Strike Price of Short Call ($):</label>
+            <input type="number" id="strikePrice" placeholder="Enter strike price">
+        
+            <label for="premium">Premium Received ($):</label>
+            <input type="number" id="premium" placeholder="Enter premium">
+        
+            <label for="currentPrice">Current Price ($):</label>
+            <input type="number" id="currentPrice" placeholder="Enter current price">
+        
+            <button onclick="calculatePoorMansCoveredCall()">Calculate</button>
+            <div id="pmccResult"></div>
+        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
